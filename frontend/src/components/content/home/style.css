@@ -1,0 +1,14 @@
+.footer {
+  background: #d9d9d9;
+  color: var(--neutral-content);
+}
+
+.footer-default {
+  position: relative;
+  top: 100%;
+}
+
+.footer-absolute {
+  position: absolute;
+  top: 110%;
+}
