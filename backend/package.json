@@ -23,6 +23,7 @@
     "nodemon": "^3.1.2",
     "punycode": "^2.3.1",
     "socket.io": "^4.7.5",
-    "socket.io-client": "^4.7.5"
+    "socket.io-client": "^4.7.5",
+    "dotenv": "^10.0.0"
   }
 }
