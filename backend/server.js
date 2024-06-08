@@ -17,7 +17,7 @@ const io = socketIo(server, {
 
 const Message = require('./models/message'); 
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
