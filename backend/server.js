@@ -10,18 +10,18 @@ const server = http.createServer(app);
 const socketIo = require("socket.io");
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "*", 
     methods: ["GET", "POST"],
   },
 });
 
-const Message = require("./models/message"); // Import the message model
+const Message = require("./models/message"); 
 
 const PORT = 8000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({ origin: "*" }));
 
 app.use("/api", appRoutes);
 
